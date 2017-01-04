@@ -1,0 +1,22 @@
+{
+  "name": "frontpage",
+  "version": "1.0.0",
+  "description": "A modern day frontpage",
+  "main": "grid.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bczulauf/frontpage.git"
+  },
+  "author": "bezulauf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bczulauf/frontpage/issues"
+  },
+  "homepage": "https://github.com/bczulauf/frontpage#readme"
+}

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="side">
+                <div class="side-content">
+                    <ul class="element-list">
+                        <li class="element-type">
+                            Textbox
+                        </li>
+                        <li class="element-type">
+                            Image
+                        </li>
+                        <li class="element-type">
+                            Video
+                        </li>
+                        <li class="element-type">
+                            Navigation
+                        </li>
+                        <li class="element-type">
+                            Footer
+                        </li>
+                        <li class="element-type">
+                            Form
+                        </li>
+                    </ul>
+                    <div>
+                        <label>Width</label>
+                        <input id="width-slider" type="range" min="0" max="12" step="1" value="0"/>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="row">
+                    <div id="elem1" class="resizable text-element col2">
+                        <div class="resize-handle"></div>
+                    </div>
+                    <div id="elem2" class="resizable text-element col5">
+                    </div>
+                    <nav></nav>
+                </div>
+            </div>
+        </div>
+        <script src="lib/jquery.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/resize.js"></script>
+        <script src="js/dragdrop.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>

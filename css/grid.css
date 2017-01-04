@@ -1,0 +1,124 @@
+body {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.side {
+    flex: 0, 0, auto;
+    width: 200px;
+    background-color: #f8f8f8;
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+.side-content {
+    padding: 20px;
+}
+
+#elem1 {
+    background-color: gold;
+}
+
+#elem2 {
+    background-color: turquoise;
+}
+
+.text-element {
+    height: 40px;
+}
+
+.resizable {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.resizable:hover {
+    display: block;
+    border-right: 1px solid #999;
+}
+
+.resize-handle {
+    cursor: ew-resize;
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    height: 100%;
+    width: 10px;
+    z-index: 1;
+}
+
+.ghost-element {
+   box-sizing: border-box;
+   outline: 1px solid #888;
+   opacity: .5;
+}
+
+.element-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.element-type {
+    margin: 5px 0;
+    cursor: move;
+}
+
+.cursor-resize {
+    cursor: ew-resize
+}
+
+.grid {
+    width: 960px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex: 0 0 80px;
+}
+.col2 {
+    flex: 0 0 160px;
+}
+.col3 {
+    flex: 0 0 240px;
+}
+.col4 {
+    flex: 0 0 320px;
+}
+.col5 {
+    flex: 0 0 400px;
+}
+.col6 {
+    flex: 0 0 480px;
+}
+.col7 {
+    flex: 0 0 560px;
+}
+.col8 {
+    flex: 0 0 640px;
+}
+.col9 {
+    flex: 0 0 720px;
+}
+.col10 {
+    flex: 0 0 800px;
+}
+.col11 {
+    flex: 0 0 880px;
+}
+.col12 {
+    flex: 0 0 960px;
+}
