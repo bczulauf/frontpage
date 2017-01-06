@@ -2,7 +2,7 @@ const Api = (function () {
     return {
         getSite: () => {
             const promise = new Promise((resolve, reject) => {
-                const siteObj = {
+                const data = {
                     name: "welcome",
                     core: {
                         header: {
@@ -29,8 +29,8 @@ const Api = (function () {
                             ]
                         },
                         footer: {
-                            rows: [
-                                [
+                            rows: {
+                                elements: [
                                     {
                                         type: "nav",
                                         length: "col8",
@@ -42,7 +42,7 @@ const Api = (function () {
                                         }
                                     }
                                 ]
-                            ]
+                            }
                         }
                     },
                     pages: [
@@ -51,26 +51,52 @@ const Api = (function () {
                             name: "home",
                             type: "home",
                             rows: [
-                                [
-                                    {
-                                        type: "text",
-                                        length: "col4",
-                                        options: {
-                                            text: "Welcome to my wonderful site!"
+                                {
+                                    elements: [
+                                        {
+                                            type: "image",
+                                            length: "col4",
+                                            options: {
+                                                text: "Welcome to my wonderful site!"
+                                            }
                                         }
-                                    }
-                                ]
+                                    ]
+                                },
+                                {
+                                    elements: [
+                                        {
+                                            type: "text",
+                                            length: "col8",
+                                            options: {
+                                                text: "Welcome to my wonderful site!"
+                                            }
+                                        }
+                                    ]
+                                }
                             ]
                         },
                         {
-                            id: "welcome-blog",
-                            name: "welcome blog",
-                            type: "blog"
+                            id: "home",
+                            name: "home",
+                            type: "home",
+                            rows: [
+                                {
+                                    elements: [
+                                        {
+                                            type: "text",
+                                            length: "col4",
+                                            options: {
+                                                text: "Welcome to my wonderful site!"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
 
-                resolve(siteObj);
+                resolve(data);
             });
             return promise;
         }
